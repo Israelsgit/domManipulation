@@ -35,7 +35,7 @@ button {
     cursor: pointer;
     color: #000000;
     border: none;
-    background: #000;
+    background: #5b5b5b;
     color: #fff;
     height: 60px;
     border-radius: 30px;
@@ -43,6 +43,12 @@ button {
 }
 #answer{
     width: 50%;
+    height: 50%;
     text-align: center;
     margin: 60px auto;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background: #5b5b5b;
+    color: #fff;
 }
