@@ -33,18 +33,35 @@
 //   document.getElementById('answer').innerText = text;
 // }
 
-function getFactorial() {
-  const number = document.getElementById('input').value;
+// function getFactorial() {
+//   const number = document.getElementById('input').value;
 
-  if (number < 0) {
-    document.getElementById('answer').innerText = "Factorial does not exist for negative numbers.";
-  } else if (number === 0) {
-    document.getElementById('answer').innerText = `The factorial of ${number} is 1`;
+//   if (number < 0 ) {
+//     document.getElementById('answer').innerText = "Factorial does not exist.";
+//   } else if (number === 0) {
+//     document.getElementById('answer').innerText = `The factorial of ${number} is 1`;
+//   } else {
+//     let factorial = 1
+//     for(i=1; i<=number; i++){
+//       factorial *= i;
+//     }
+//     document.getElementById('answer').innerText = `The factorial of ${number} is ${factorial}`;
+//   }
+// }
+
+
+function palindromeFunction() {
+
+  const word = document.getElementById('input').value
+  const arrayItems = document.getElementById('input').value.split('')
+
+  const arrayItemsReversed = arrayItems.reverse()
+
+  const reverseString = arrayItemsReversed.join('')
+
+  if (document.getElementById('input').value == reverseString)  {
+    document.getElementById('answer').innerText = `${word} is a Palindrome`
   } else {
-    let factorial = 1
-    for(i=1; i<=number; i++){
-      factorial *= i;
-    }
-    document.getElementById('answer').innerText = `The factorial of ${number} is ${factorial}`;
+    document.getElementById('answer').innerText = `${word} is not a Palindrome`
   }
 }
